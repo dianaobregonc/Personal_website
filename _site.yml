@@ -1,9 +1,15 @@
 name: "Diana Obregon"
 navbar:
-  title: "Explore"
+  title: "Diana Obregon"
   left:
     - text: "About me"
       href: index.html
     - text: "Research"
       href: about.html
 output_dir: "."
+output:
+  html_document:
+    theme: flatly
+    highlight: textmate
+    toc: true 
+    toc_float: true 
