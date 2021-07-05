@@ -1,6 +1,6 @@
-name: "our-website"
+name: "Diana Obregon"
 navbar:
-  title: "Our Collaborative Website"
+  title: "Explore"
   left:
     - text: "About me"
       href: index.html
