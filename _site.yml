@@ -2,9 +2,11 @@ name: "Diana Obregon"
 navbar:
   title: "Diana Obregon"
   left:
-    - text: "About me"
+    - text: "About"
       href: index.html
     - text: "Research"
+      href: Research.html
+    - text: "Outreach"
       href: about.html
 output_dir: "."
 output:

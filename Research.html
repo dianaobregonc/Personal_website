@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Research.utf8</title>
+
+<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Diana Obregon</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">About</a>
+</li>
+<li>
+  <a href="Research.html">Research</a>
+</li>
+<li>
+  <a href="about.html">Outreach</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<div id="ph.d.-research" class="section level2">
+<h2><strong>Ph.D. Research</strong></h2>
+<div id="landscapes-pesticides-and-bees" class="section level3">
+<h3><strong>Landscapes, pesticides, and bees</strong></h3>
+<p>Land-use change and pesticides have been identified as two of the main causes behind <a href="https://science.sciencemag.org/content/347/6229/1255957.abstract">pollinator decline</a>. Understanding how these factors affect crop pollinator communities is crucial to inform practices that generate optimal pollination and ensure sustainable food production.</p>
+<div id="natural-habitat-partially-mitigates-negative-pesticide-effects-on-tropical-pollinator-communities" class="section level4">
+<h4><strong>- Natural habitat partially mitigates negative pesticide effects on tropical pollinator communities</strong></h4>
+<p>In this study, we investigated the effects of landscape composition and pesticide residues on bee communities and their pollination services in <em>Solanum quitoense</em> Lam. “lulo” crops in the Andean region of Colombia. We found that bee abundance and richness are reduced with the increased toxicity and concentration of pesticides found in flowers (Mainly imidacloprid) but these negative pesticide effects were less detrimental in farms with higher natural habitat proportions, suggesting a dilution effect.</p>
+<p><a href="https://www.sciencedirect.com/science/article/pii/S2351989421002183?via%3Dihub">Check out the published paper</a> and the infographic in the outreach section.</p>
+<div class="figure">
+<img src="Bombus%20in%20lulo.jpg" style="width:75.0%" alt="" />
+<p class="caption"><em>Bombus transversalis</em> in a <em>Solanum quitoense</em> flower</p>
+</div>
+<hr />
+</div>
+<div id="landscape-simplification-effects-on-tetragonisca-angustula-nutrition-and-pesticide-exposure" class="section level4">
+<h4><strong>- Landscape simplification effects on <em>Tetragonisca angustula</em> nutrition and pesticide exposure</strong></h4>
+<p><em>Tetragonisca angustula</em> is the most common stingless bee species in Latin America. In Colombia, it is found below 2000m of altitude. Deforestation to transform natural ecosystems into grazing land areas and simplified agricultural landscapes are rapidly increasing in South America but there is scant information showing how this is affecting stingless bees. In this study, we evaluated if landscape simplification is impacting bee nutrition, body size, and pesticide exposure. We found that the increment of pasture area in the landscape significantly reduces the amount of Asteraceae pollen collected by <em>T. angustula</em> colonies, which generates a cascade effect, leading to a decrease in trehalose concentration in the food, <em>which is an important disaccharide in the insect’s hemolymph and the main energy source for flying</em>, and consequently reducing bee body size. Also, more pasture area is correlated with higher concentrations of avermectins, which are insecticides used to treat the cattle against parasites such as ticks and flies.</p>
+<p><em>Paper in progress</em></p>
+<div class="figure">
+<img src="Angelitas.png" style="width:75.0%" alt="" />
+<p class="caption">Natural nest entrance of <em>Tetragonisca angustula</em></p>
+</div>
+<hr />
+</div>
+<div id="non-target-exposure-of-avermectins-to-bees-in-livestock-dominated-landscapes" class="section level4">
+<h4><strong>- Non-target exposure of avermectins to bees in livestock dominated landscapes</strong></h4>
+<p>Pastures for cattle ranching are currently the main cover type in the Andes, representing the biggest driver of biodiversity loss in this highly diverse region. Associated with these livestock systems, there is an extensive use of pesticides for the control of endo and ectoparasites in cattle. However, there is no information about the exposure routes and potential risks of pesticides for bees in cattle ranching systems. In previous work in Colombia, we found residues of abamectin (Molecule in the avermectin group) in 50% of pollen samples collected from <em>Tetragonisca angustula</em> colonies. We also found a positive correlation between pasture areas in the colonies’ surroundings and the concentration of abamectin in the bee food. For this follow-up project, we designed an experiment in which we found that the abamectin found in bee colonies can be a product of the pollen collection on flowers contaminated with feces from treated cattle with avermectins (Ivermectin in particular).</p>
+<p><em>Work in progress</em></p>
+<p><img src="Cattle.png" style="width:75.0%" /></p>
+<hr />
+</div>
+</div>
+<div id="pest-management-practices-and-pesticide-exposure" class="section level3">
+<h3><strong>Pest management practices and pesticide exposure</strong></h3>
+<p>Crop pollination benefits are often enhanced under <a href="https://doi.org/10.1098/rspb.2015.2529">effective pest control</a> but the use of pesticides to avoid herbivore damage has shown detrimental effects on pollinators, <a href="https://doi.org/10.1038/nature16167">reducing the final outcome of the crops</a> in the short or long term. This dilemma requires research in greater detail on the efficiency of pest management practices and their effect on pollinators.</p>
+<div id="the-pest-control-and-pollinator-protection-dilemma-the-case-of-thiamethoxam-applications-in-squash-crops" class="section level4">
+<h4><strong>- The pest control and pollinator protection dilemma: The case of thiamethoxam applications in squash crops</strong></h4>
+<p>Squash crops are entirely dependent on bee pollination to produce fruits. The most common bee species pollinating cucurbits in eastern North America are Apis mellifera, Bombus impatiens, and the solitary ground nesting bee Eucera (Peponapis) pruinosa. On the other hand, the striped cucumber beetle Acalymma vittatum (F.) (Coleoptera: Chrysomelidae) is the major insect pest of squash crops in the northeastern and midwestern United States and eastern Canada. Adult beetles feed on cotyledons, foliage, flowers, and fruits, and larvae feed exclusively on roots. Early season damage and the transmission of bacterial wilt (Erwinia tracheiphila) are the biggest concerns associated with this pest. Neonicotinoids are commonly applied to avoid pest damage as prophylactic measures at planting through seed treatments or soil drenches, as well as early foliar applications to provide a 2-3 week protection window. Neonicotinoids residues have been previously found in pollen, nectar, and soil of Cucurbita crops, representing a risk of exposure for bees but these residues have not been evaluated in relation to the different application methods and the pest control efficiency, with the goal of providing comprehensive recommendations to growers. The aim of this study was to evaluate how different prophylactic application methods (seed treatments, in-furrow applications, and early foliar sprays) of commercially available thiamethoxam products impact pest control, bee visitation, yield, and pesticides residues in foliage, pollen, and nectar of squash crops with the purpose of elucidating if there are uses of this insecticide that provides an efficient pest control solution for squash crops while minimizing pesticide pollinator exposure. Among the different thiamethoxam application methods, in-furrow application was the treatment that prevented defoliation the most and produced the highest fruit weight and fruit number. However, it also produced the most frequent and highest thiamethoxam concentrations in nectar and pollen, reaching lethal hazards for the bees. Our study provides evidence that under the current application methods thiamethoxam does not provide a sustainable solution for squash growers and further research in more efficient pesticide delivery methods are required as well as alternative non-pesticide pest control measurements.</p>
+<p><em>Paper in progress</em></p>
+<p><img src="S_bee.jpeg" style="width:45.0%" alt="Squash bee" /> <img src="SCB.jpeg" style="width:50.0%" alt="Striped cucumber beetle" /></p>
+<hr />
+</div>
+</div>
+<div id="pesticides-and-plant-secondary-metabolites" class="section level3">
+<h3><strong>Pesticides and plant secondary metabolites</strong></h3>
+<p>Plants produce an array of secondary metabolites to deter herbivores, and while nectar and pollen usually contain lower concentrations, pollinators are also exposed to these compounds. There is evidence that phytochemicals present in pollen and nectar, such as coumaric acid or nicotine can up-regulate detoxification genes (P450s), which are also involved in the ability of insects to cope with pesticides. However, it has not been shown directly if bees exposed to certain secondary metabolites have an improved detoxification system against pesticides.</p>
+<div id="interactive-effects-of-a-floral-secondary-metabolite-chlorogenic-acid-and-thiamethoxam-on-bumble-bee-microcolonies" class="section level4">
+<h4><strong>- Interactive effects of a floral secondary metabolite (chlorogenic acid) and thiamethoxam on bumble bee microcolonies</strong></h4>
+<p>Bumble bees are important crop pollinators worldwide. However, when bees are foraging in agricultural environments, they can encounter a wide range of pesticides that can affect their survival and development. Neonicotinoids are systemic insecticides, well known for their pest control efficiency but also for being highly toxic to bees. Thiamethoxam is the second most used neonicotinoid, and it has already shown that bees can be exposed to sublethal concentrations of this insecticide when visiting crops.</p>
+<p>Flowers provide sugar and protein-based rewards for pollinators, but they also commonly contain secondary metabolites that function as deterrents or antibiotics. Moreover, early biochemical evidence in honey bees suggests that plant secondary metabolites can help bees to detoxify certain pesticide molecules increasing survival. In our study, we tested if different concentrations of chlorogenic acid, a common polyphenol produced in nectar and pollen of many crop plants, interacted with different sublethal concentrations of thiamethoxam in bumble bee colony development. We found that the probability to have a successful bumble bee microcolony with brood when simultaneously exposed to chlorogenic acid and thiamethoxam is dose-dependent.</p>
+<p><em>Paper in progress</em></p>
+<p><img src="Results_microcolonies.png" style="width:150.0%" /></p>
+<hr />
+</div>
+</div>
+</div>
+<div id="master-research" class="section level2">
+<h2><strong>Master Research</strong></h2>
+<div id="melissopalynology" class="section level3">
+<h3><strong>Melissopalynology</strong></h3>
+</div>
+<div id="floral-preference-of-melipona-eburnea-friese-hymenoptera-apidae-in-a-colombian-andean-region" class="section level3">
+<h3><strong>- Floral Preference of Melipona eburnea Friese (Hymenoptera: Apidae) in a Colombian Andean Region</strong></h3>
+<div id="diana-obregon-guiomar-nates-parra" class="section level4">
+<h4>Diana Obregon &amp; Guiomar Nates Parra</h4>
+<p><em>Melipona eburnea</em> Friese is a stingless bee kept in some regions of Colombia, where it is reported to be vulnerable to extinction due to habitat disturbance. To contribute to raising conservation strategies, the aim of this study was to identify the floral preferences of this species using melissopalynological analysis. A total of 31 pollen pot samples and 37 honey samples were taken from March 2009 through March 2010 from four colonies in Fusagasuga, Colombia. We found 92 pollen types: 17 from pollen pot samples, 39 from honey samples (indicating the sources of nectar), and 36 in both types of samples. The most frequent pollen types in the pollen pot samples were <em>Myrcia</em> type (100%), <em>Eucalyptus globulus</em> (96.9%), and <em>Fraxinus uhdei</em> (96.9%). The most frequent pollen types in honey samples were <em>E. globulus</em> (97.4%) and <em>Myrcia</em> type (94.9%). The pollen types corresponded mainly to native plants (68%), trees (44.5%), plants whose sexual system is hermaphroditic (56.5%), and plants with inflorescences (76.2%). The most frequent shapes of the flowers were brush-like (type Myrtaceae) and dish-like (type Asteraceae), and the preferred flower colors were white or cream (52.2%). In general, we found that <em>M. eburnea</em> showed a strong preference for trees of the family Myrtaceae to obtain nectar and pollen, including native and introduced species. Some other families are contributing significantly, such as Melastomataceae for pollen collection and Asteraceae for nectar. These results highlight the key plant species for the diet of <em>M. eburnea</em>.</p>
+<p><a href="https://link-springer-com.proxy.library.cornell.edu/article/10.1007/s13744-013-0172-y">Check out the published paper</a></p>
+<p><img src="Pollen_melipona.png" alt="Common pollen types collected by Melipona eburnea" /> ******* ### ** - Botanical Origin of Pot-Honey from <em>Tetragonisca angustula</em> Latreille in Colombia**</p>
+</div>
+<div id="diana-obregón-ángela-rodríguez--fermín-j.-chamorro-guiomar-nates-parra" class="section level4">
+<h4>Diana Obregón, Ángela Rodríguez -Fermín J. Chamorro, &amp; Guiomar Nates-Parra</h4>
+<p>We identified the plants providing nectar resources to <em>Tetragonisca angustula</em> using melissopalynological analysis of 76 honey samples from eight states in Colombia. A total of 306 pollen types belonging to 49 families were identified. According to pollen frequency classes 40 monofloral, 13 bifloral, and 23 multifloral honeys were found. Representative plants of the coffee agroecosystem (<em>Coffea arabica</em> and native plants such as <em>Gouiana polygama</em> and <em>Heliocarpus americanus</em>) were the main nectar sources for monofloral and bifloral honey. These results may improve meliponiculture performance in Colombia because stingless bee beekeepers can implement management practices aiming botanical differentiation of the honeys.</p>
+<hr />
+</div>
+</div>
+</div>
+<div id="other-research-projects" class="section level2">
+<h2><strong>Other research projects</strong></h2>
+<div id="animal-pollination-contribution-to-crop-yield-and-quality-a-systematic-review" class="section level3">
+<h3><strong>- Animal pollination contribution to crop yield and quality – A systematic review</strong></h3>
+<div id="review-team-kass-urban-mead-heather-grab-julie-davis-kaitlin-deutsch-laura-figueroa-grace-pederson-diana-obregon" class="section level4">
+<h4>Review team: Kass Urban-Mead, Heather Grab, Julie Davis, Kaitlin Deutsch, Laura Figueroa, Grace Pederson, &amp; Diana Obregon</h4>
+<p>Animal pollination is a key ecosystem service for the reproduction of many crops worldwide. Based on the floral biology and the pollination strategy, crops vary in their dependence on pollinators. The magnitude of animal pollinator dependence is usually measured in field experiments where pollinators are allowed to access the crop flowers in contrast to exclusion treatments, and increments in fruit set, seed set or quality aspects of those treatments are considered the benefits provided by pollinators. Klein et al., 2006 compiled data on pollinator dependence for 124 leading crops (57 single and 67 commodity crops with an annual production of at least 4 000 000 Metric tonnes (Mt) in 2004 according to FAO). In this review, they found production increases due to animal pollination in 39 out of 57 single crops, and 48 out of 67 commodity crops. However, they found little or inadequate information for many crops, especially taking into account differences in crop varieties. Additionally, their results do not separate increases in yield from increases in crop quality.</p>
+<p>Our systematic review aims to collect and update evidence about the benefits in yield and quality that pollinators contribute to crops, including all the new scientific evidence produced since 2006. We want to make particular emphasis on all aspects of harvest quality in which pollinators can have a positive effect such as fruit weight, fruit symmetry, sugar content, shelf life, and commercial value. The results of this review may be essential for the assessment and protection of pollinators, which are currently threatened by pests and diseases, use of pesticides, loss of natural habitat and climate change.</p>
+<p><em>Work in progress</em></p>
+<hr />
+</div>
+</div>
+<div id="agrochemical-pesticide-production-trade-and-hazard-narrowing-the-information-gap-in-colombia" class="section level3">
+<h3><strong>- Agrochemical pesticide production, trade, and hazard: Narrowing the information gap in Colombia</strong></h3>
+<div id="diego-valbuena-marcela-cely-santos-diana-obregón" class="section level4">
+<h4>Diego Valbuena, Marcela Cely-Santos, &amp; Diana Obregón</h4>
+<p>Pesticides are a major tool for the intensification of agriculture, and helped to increase food, feed and biofuel production. Yet, there are persistent concerns about the negative effects of pesticides in human health and the environment, particularly in low and middle income countries (LMICs). Given the lack of information on pesticide exposure and hazard, Colombia exemplifies the need to narrow the information gap on pesticide risk in LMICs. We assessed pesticide hazard in Colombia based on the official toxicity categorization, compared it to more integral international standards, and identified main actions to narrow this information gap. Results showed that Colombia has been a relevant regional actor in pesticide production and trade, reaching almost 75 million kilogrammes and liters sold in 2016. Based on acute toxicity for humans, a quarter of the amount of pesticides sales and imports, and a third of the exports in 2016 ranged from moderately to extremenly toxic. The top-selling agrochemicals in 2016 (glyphosate with 14% of the total sales, chlorpyrifos 7.5% and mancozeb 6.9%) are also commonly used in other countries, reflecting a homogenized global industry. Compared to integral international categorizations, we found that for that year 63% of the pesticides sold with slightly acute toxicity are actually considered highly hazardous pesticides (HHP) for humans or the environment, evidencing the need to use a more integral hazard categorization in the country. Narrowing the information gap in pesticide use and associated risks demands a transparent process of knowledge creation and sharing, including funtional information and monitoring systems. This should be part of an integral assessment and regulation that better defines HHP, their production and trade to reduce pesticide risk while informing a transition towards sustainable food systems.</p>
+<p><a href="https://www.sciencedirect.com/science/article/pii/S0301479721002036?via%3Dihub">Check out the published paper</a> and the infographic in the outreach section.</p>
+<div class="figure">
+<img src="Agrotox_Colombia.jpg" alt="" />
+<p class="caption">Comparison between the ICA (acute) toxic categories and PAN-HHP including: a. Number of currently registered pesticide products whose active ingredient was considered a HHP and hazard group by the PAN per: a. ICA toxicity category; and b. Main use. Dots and second y-axis represented the % of these HHP in the sales for each individual toxicity category and main use in 2016. Data source: ICA and PAN</p>
+</div>
+<hr />
+</div>
+</div>
+<div id="effect-of-climatic-factors-plant-varieties-and-planting-densities-on-arthropod-dynamics-in-rice-crops-in-yopal-casanare-colombia" class="section level3">
+<h3><strong>- Effect of climatic factors, plant varieties, and planting densities on arthropod dynamics in rice crops in Yopal-Casanare, Colombia</strong></h3>
+<div id="diana-obregon-francisco-javier-hernandez-diana-katherine-rios" class="section level4">
+<h4>Diana Obregon, Francisco Javier Hernandez, &amp; Diana Katherine Rios</h4>
+<p>The diversity and population dynamics of arthropods present in rice crops under dry and irrigated planting systems were evaluated, with two rice varieties (Fedearroz 174 and Fedearroz 733), and in three planting densities (60, 100, and 180 kg/ha) in relation to different climatic variables. For specimen collection, 10 double entomological net passes were performed every eight days from emergence to the start of the maturation phase. The morphotypes found were identified and grouped according to their type of interaction with the crop in sap-suckers, chewers, predators, and parasitoids. The most relevant climatic variables were selected with a Random Forest analysis. 126 morphotypes were identified in 12 orders. The greatest richness was found in Hemiptera, Coleoptera and Diptera, as well as in the group of suckers. No differences were found in the abundance or richness of arthropods between varieties or planting densities. The irrigation system presented a greater total abundance of arthropods compared to the rainfed system, but in this system, there was higher species richness. Parasitoid and predator populations were negatively correlated with chewers but there was no effect on sap-suckers. Temperature and relative humidity were the most relevant climatic variables in arthropod dynamics. These results contribute to develop pest monitoring and management systems that take into account the dynamics of interaction between ecological groups and the effect of local climate.</p>
+<p><a href="https://revistacolombianaentomologia.univalle.edu.co/index.php/SOCOLEN/article/view/9364/13696">Check out the published paper (Full text in Spanish)</a></p>
+<div class="figure">
+<img src="Tagosodes.png" alt="" />
+<p class="caption"><em>Tagososdes orizicolus</em>, main pest in rice crops in Colombia. Evidence of ectoparasitism in its abdomen (area circled in red)</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
