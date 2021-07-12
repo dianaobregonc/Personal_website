@@ -89,7 +89,7 @@ Flowers provide sugar and protein-based rewards for pollinators, but they also c
 
 ### **Melissopalynology**
 
-### **- Floral Preference of Melipona eburnea Friese (Hymenoptera: Apidae) in a Colombian Andean Region**
+### **- Floral Preference of *Melipona eburnea* Friese (Hymenoptera: Apidae) in a Colombian Andean Region**
 
 #### Diana Obregon & Guiomar Nates Parra
 
@@ -100,13 +100,21 @@ Flowers provide sugar and protein-based rewards for pollinators, but they also c
     
 
 ![Common pollen types collected by *Melipona eburnea*](/Users/dianaobregon/Box Sync/Cornell/Personal_website/Pollen_melipona.png)
+
+
+
+
 *******
-### ** - Botanical Origin of Pot-Honey from *Tetragonisca angustula* Latreille in Colombia**
+
+
+### **- Botanical Origin of Pot-Honey from *Tetragonisca angustula* Latreille in Colombia**
 
 
 #### Diana Obregón, Ángela Rodríguez -Fermín J. Chamorro, & Guiomar Nates-Parra
 
 We identified the plants providing nectar resources to *Tetragonisca angustula* using melissopalynological analysis of 76 honey samples from eight states in Colombia. A total of 306 pollen types belonging to 49 families were identified. According to pollen frequency classes 40 monofloral, 13 bifloral, and 23 multifloral honeys were found. Representative plants of the coffee agroecosystem (*Coffea arabica* and native plants such as *Gouiana polygama* and *Heliocarpus americanus*) were the main nectar sources for monofloral and bifloral honey. These results may improve meliponiculture performance in Colombia because stingless bee beekeepers can implement management practices aiming botanical differentiation of the honeys.
+
+[Check out the published chapter](https://link.springer.com/chapter/10.1007/978-1-4614-4960-7_23)
 
 ******
 
@@ -114,7 +122,8 @@ We identified the plants providing nectar resources to *Tetragonisca angustula* 
 
 ### **- Animal pollination contribution to crop yield and quality – A systematic review**
 
-#### Review team: Kass Urban-Mead, Heather Grab, Julie Davis, Kaitlin Deutsch, Laura Figueroa, Grace Pederson, & Diana Obregon
+#### Review team: Diana Obregon, Julie K. Davis, Kaitlin R. Deutsch, Laura L. Figueroa, Heather Grab, Grace Pederson,  Jim Morris-Knower, Katherine R. Urban-Mead.
+
 
 Animal pollination is a key ecosystem service for the reproduction of many crops worldwide. Based on the floral biology and the pollination strategy, crops vary in their dependence on pollinators. The magnitude of animal pollinator dependence is usually measured in field experiments where pollinators are allowed to access the crop flowers in contrast to exclusion treatments, and increments in fruit set, seed set or quality aspects of those treatments are considered the benefits provided by pollinators.  Klein et al., 2006 compiled data on pollinator dependence for 124 leading crops (57 single and 67 commodity crops with an annual production of at least 4 000 000 Metric tonnes (Mt) in 2004 according to FAO). In this review, they found production increases  due to animal pollination in 39 out of 57 single crops, and 48 out of 67 commodity crops. However, they found little or inadequate information for many crops, especially taking into account differences in crop varieties. Additionally, their results do not separate increases in yield from increases in crop quality.
 
