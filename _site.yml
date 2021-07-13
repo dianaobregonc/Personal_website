@@ -1,8 +1,8 @@
-name: "Diana Obregon"
+name: "Diana Obregon Ph.D. Candidate in entomology"
 navbar:
   title: "Diana Obregon"
   left:
-    - text: "About"
+    - text: "About me"
       href: index.html
     - text: "Research"
       href: Research.html
