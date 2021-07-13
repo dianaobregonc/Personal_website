@@ -6,6 +6,8 @@ navbar:
       href: index.html
     - text: "Research"
       href: Research.html
+    - text: "Teaching and Inclusion"
+      href: Teaching.html
     - text: "Outreach and Extension"
       href: Outreach_and_Extension.html
 output_dir: "."
