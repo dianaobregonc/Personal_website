@@ -8,9 +8,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### **Welcome!** 
 
-I am Diana Obregon (She/Her/Ella), a Ph.D. candidate in Entomology in [Katja Poveda’s Lab](https://blogs.cornell.edu/katjapoveda/) at Cornell University. 
+I am Diana Obregon (She/Her/Ella), Ph.D. in Entomology from [Katja Poveda’s Lab](https://blogs.cornell.edu/katjapoveda/) at Cornell University. 
 
-My research interests include plant-insect interactions in agroecosystems, non-target pesticide exposure on pollinators, and land use effects on ecosystem services provided by insects. My field work is developed in Colombia studying stingless bees in fruit and cattle ranching farms and in the US studying squash crops and its pest and pollinators. I am also passionate about engaging with growers and beekeepers to discuss sustainable solutions in farming. 
+My research interests include plant-insect interactions in agroecosystems, pesticide risk assessments to protect non-target organisms, and land use effects on ecosystem services provided by insects. My field work is developed in Colombia studying stingless bees in fruit and cattle ranching farms and in the US studying squash crops and their pest and pollinators. I am also passionate about engaging with growers and beekeepers to discuss sustainable solutions in farming. 
 
 In my free time, I love hiking, dancing, and painting with watercolors. 
 
